@@ -12,7 +12,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-@cache_page(60 * 10)
+@cache_page(60)
 def index(request):
     response = requests.get('http://cvk.gov.ua/pls/vnd2014/wp039pt001f01=910.html#', timeout=600)
     # response = requests.get('http://localhost:5000/static/cvk.html')
