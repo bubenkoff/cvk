@@ -1,7 +1,7 @@
+"""Results views."""
+
 import collections
 import requests
-
-import numpy
 
 from bs4 import BeautifulSoup
 
