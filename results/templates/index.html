@@ -5,8 +5,28 @@
 
 <ul>
 
-{% for percent, result in results %}
-    <li>{{ percent }} - {{ result }} tushka(s)</li>
+{% for result, number in majorital %}
+    <li>{{ result }} - {{ number }} tushka(s)</li>
+{% endfor %}
+
+</ul>
+
+<h2>Proportional system</h2>
+
+<ul>
+
+{% for result, number in proportional %}
+    <li>{{ result }} - {{ number }} tushka(s)</li>
+{% endfor %}
+
+</ul>
+
+<h2>Cumulative</h2>
+
+<ul>
+
+{% for result, number in cumulative %}
+    <li>{{ result }} - {{ number }} tushka(s)</li>
 {% endfor %}
 
 </ul>
