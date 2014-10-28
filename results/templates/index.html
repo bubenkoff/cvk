@@ -1,0 +1,12 @@
+<h1>Results of the Ukraine parliamental elections 2014</h1>
+
+
+<h2>Majorital system</h2>
+
+<ul>
+
+{% for percent, result in results %}
+    <li>{{ percent }} - {{ result }}</li>
+{% endfor %}
+
+</ul>
